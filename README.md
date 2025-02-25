@@ -1,11 +1,11 @@
-# SELECT-FROM-STATEMENT
-## This is Day 1 of Learning Basic Sql Queries
+# Day 1 of Learning Basic Sql Queries
 
+## SELECT-FROM-STATEMENT
 - The SELECT statement is used to specify which columns of a database table should be included in the result.
 - The "SELECT" keyword is used to specify the columns to be retrieved.
 - "FROM" keyword is used to specify the table from which the data is to be retrieved.
 
-## COMMANDS THAT CAN BE USED WITH THE SELECT COMAND ARE: *, TOP 10*, DISTINCT, COUNT, AS, MAX, MIN, AVG 
+## COMMANDS THAT CAN BE USED WITH THE SELECT COMAND ARE: (*), TOP 10*, DISTINCT, COUNT, AS, MAX, MIN, AVG 
 
 ### *
 - The asterisk (*) is a wildcard character that represents all columns in the table.
