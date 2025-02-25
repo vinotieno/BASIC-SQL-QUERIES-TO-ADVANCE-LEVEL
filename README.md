@@ -61,6 +61,16 @@
     OR only one
     % wild card after a letter or number means anywhere in the body but the letter must be at the beginning, before means at the beginning anywhere in the body that has that 
     letter.
+    BETWEEN allows you to subset rows within a certain range, which makes WHERE clauses simpler and easier to read.
+    example:
+    SELECT *
+    FROM films
+    WHERE date BETWEEN 2020 AND 2022;
+
+    IN The IN operator is a shorthand for multiple OR statements.
+    LIKE The LIKE operator lets you search for patterns in a text column using special strings called wildcards. Wildcards let you find text strings that fit a specific 
+    pattern.
+
 
 
 
