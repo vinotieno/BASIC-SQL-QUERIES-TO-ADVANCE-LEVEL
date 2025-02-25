@@ -5,7 +5,7 @@
 - The "SELECT" keyword is used to specify the columns to be retrieved.
 - "FROM" keyword is used to specify the table from which the data is to be retrieved.
 
-## COMMANDS THAT CAN BE USED WITH THE SELECT COMAND ARE: (*), TOP 10*, DISTINCT, COUNT, AS, MAX, MIN, AVG 
+## COMMANDS THAT CAN BE USED WITH THE SELECT COMAND ARE: asterisk (*), TOP 10*, DISTINCT, COUNT, AS, MAX, MIN, AVG 
 
 ### *
 - The asterisk (*) is a wildcard character that represents all columns in the table.
@@ -35,6 +35,27 @@
   
 ### SUM
 - SUM() returns the total of numeric values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
