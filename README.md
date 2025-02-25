@@ -5,7 +5,8 @@
 - The "SELECT" keyword is used to specify the columns to be retrieved.
 - "FROM" keyword is used to specify the table from which the data is to be retrieved.
 
-## COMMANDS THAT CAN BE USED WITH THE SELECT COMAND ARE: asterisk (*), TOP 10*, DISTINCT, COUNT, AS, MAX, MIN, AVG 
+## COMMANDS THAT CAN BE USED WITH THE SELECT COMMAND ARE: 
+- asterisk (*), TOP 10*, DISTINCT, COUNT, AS, MAX, MIN, AVG 
 
 ### *
 - The asterisk (*) is a wildcard character that represents all columns in the table.
@@ -22,25 +23,40 @@
 - MAX() returns the maximum value in a numeric column.
   
 ### MIN
-- MIN() returns the minimum value in a numeric column
+- MIN() returns the minimum value in a numeric column.
   
 ### AVG
-- AVG(): AVERAGE calculates the arithmetic mean of a column
+- AVG(): AVERAGE calculates the arithmetic mean of a column.
 
 ### COUNT  
-- COUNT() returns the number of rows in the table or group
+- COUNT() returns the number of rows in the table or group.
 
 ### AS
 - To rename a column or a table when returning results, you can use the AS command to set an alias for your outputs.
   
 ### SUM
-- SUM() returns the total of numeric values
+- SUM() returns the total of numeric values.
 
 
 
 
+# Day 2 of Learning Basic Sql Queries
 
+## WHERE STATEMENT
+- The WHERE clause filters rows that match a certain condition.
+- Limits the amount of data & specify what data.
 
+## COMMANDS THAT CAN BE USED WITH THE WHERE COMMAND ARE: 
+    =, <>,>,< ,>=,AND, OR, LIKE,NULL, NOT NULL, IN, %
+    
+    = equal to
+    <> doesnot equal(except)
+    > greater than
+    < less than
+    AND two things 
+    OR only one
+   % wild card after a letter or number means anywhere in the body but the letter must be at the beginning, before means at the beginning anywhere in the body that has that 
+  letter.
 
 
 
