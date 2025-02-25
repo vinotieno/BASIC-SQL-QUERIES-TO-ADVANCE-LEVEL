@@ -6,7 +6,11 @@
 - "FROM" keyword is used to specify the table from which the data is to be retrieved.
 
 ## COMMANDS THAT CAN BE USED WITH THE SELECT COMMAND ARE: 
-- asterisk (*), TOP 10*, DISTINCT, COUNT, AS, MAX, MIN, AVG 
+    asterisk (*), 
+    TOP 10*, 
+    DISTINCT, 
+    COUNT, 
+    AS, MAX, MIN, AVG 
 
 ### *
 - The asterisk (*) is a wildcard character that represents all columns in the table.
@@ -55,8 +59,8 @@
     < less than
     AND two things 
     OR only one
-   % wild card after a letter or number means anywhere in the body but the letter must be at the beginning, before means at the beginning anywhere in the body that has that 
-  letter.
+    % wild card after a letter or number means anywhere in the body but the letter must be at the beginning, before means at the beginning anywhere in the body that has that 
+    letter.
 
 
 
