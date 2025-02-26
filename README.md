@@ -73,10 +73,25 @@
 
 
 
+# Day 3 of Learning Basic Sql Queries
 
+## GROUP BY + ORDER BY  STATEMENT
+- Both GROUP BY and ORDER BY are used for organizing data, but they serve different purposes.
+- 
+### GROUP BY
+     GROUP BY – Used for Aggregation
+     When you need summary statistics like counts, totals, or averages.
+     It reduces multiple rows into one based on the grouped column.
 
-
-
+ ### ORDER BY    
+     ORDER BY – Used for Sorting
+     Sorts the final output in ascending (ASC) or descending (DESC) order.
+     Can be used with both aggregated and non-aggregated queries.
+     Feature	                  GROUP BY	                                               ORDER BY
+     Purpose	                  Groups rows for aggregation	                           Sorts final output
+     Function	                  Used with COUNT(), SUM(), AVG()	                       Used with ASC or DESC
+     Affects Output?	          Yes, reduces rows	No,                                    only changes order
+     Position in Query	          Before ORDER BY	                                       Last in query
 
 
 
