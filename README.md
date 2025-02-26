@@ -94,6 +94,10 @@
      Position in Query	          Before ORDER BY	                                       Last in query
 
 
+# Day 4 of Learning Intermediate Sql Queries
+
+### Joins (Inner Joins, Outer Joins, Left Joins, Right Joins)
+
 
 
 
