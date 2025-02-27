@@ -87,7 +87,7 @@
      ORDER BY – Used for Sorting
      Sorts the final output in ascending (ASC) or descending (DESC) order.
      Can be used with both aggregated and non-aggregated queries.
-     Feature	                  GROUP BY	                                               ORDER BY
+     Feature	                  GROUP BY	                                                ORDER BY
      Purpose	                  Groups rows for aggregation	                           Sorts final output
      Function	                  Used with COUNT(), SUM(), AVG()	                       Used with ASC or DESC
      Affects Output?	          Yes, reduces rows	No,                                    only changes order
@@ -134,20 +134,25 @@
 
 
 
-           Feature	          UNION	                                                    JOIN
-           Purpose     	      Combines rows from multiple tables	                    Combines columns from multiple tables
-           Works on           Tables with similar columns	                            Tables with related keys (foreign key)
-           Duplicates?	      Removes duplicates (UNION) or keeps them (UNION ALL)	    Shows all matching data
-           Data Expansion	  Adds more rows	                                        Adds more columns
+           Feature	                 UNION	                                                    JOIN
+           Purpose     	          Combines rows from multiple tables	                       Combines columns from multiple tables
+           Works on               Tables with similar columns	                               Tables with related keys (foreign key)
+           Duplicates?	          Removes duplicates (UNION) or keeps them (UNION ALL)	       Shows all matching data
+           Data Expansion	      Adds more rows	                                           Adds more columns
 
 
 
 
+# Day 5 of Learning Intermediate Sql Queries
 
+### CASE STATEMENT
+      The CASE statement is used in SQL when you need conditional logic inside a query. 
+      It helps create new categorized columns, replace values, or make calculations based 
+      on conditions.
 
-
-
-
+#### USES
+     When Categorizing Data in a SELECT Statement-You can use CASE to create a new column based on conditions.
+     When Using Conditional Calculations-You can use CASE to apply different calculations based on conditions.
 
 
 
