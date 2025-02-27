@@ -153,11 +153,63 @@
 #### USES
      When Categorizing Data in a SELECT Statement-You can use CASE to create a new column based on conditions.
      When Using Conditional Calculations-You can use CASE to apply different calculations based on conditions.
+     
+
+# Day 6 of Learning Intermediate Sql Queries
+### HAVING CLAUSE
+     The HAVING clause is used to filter grouped records after applying the GROUP BY clause. It is similar to WHERE, but HAVING is specifically used with aggregated 
+     functions (SUM(), COUNT(), AVG(), etc.).
+     We must use HAVING because WHERE cannot filter aggregates.
+     Used After grouping
+
+#### When to Use HAVING
+    When filtering after aggregation (e.g., after GROUP BY).
+    When using aggregate functions (SUM(), COUNT(), AVG(), etc.).
+    When filtering groups of records, not individual rows.
+
+    Example:
+    filtering groups after aggregation:
+    
+    SELECT Department, SUM(Salary) AS Total_Salary
+    FROM Employees
+    GROUP BY Department
+    HAVING SUM(Salary) > 100000;
+
+
+    Filtering by COUNT()
+    SELECT City, COUNT(Employee_ID) AS Employee_Count
+    FROM Employees
+    GROUP BY City
+    HAVING COUNT(Employee_ID) > 10;
+
+    Feature                      	WHERE	                   HAVING
+    Used for filtering	            Before aggregation	       After aggregation
+    Works with	                    Individual rows	           Groups of data (GROUP BY)
+    Can use aggregate functions?	No	                       Yes
+    Example                      	WHERE Salary > 50000	   HAVING SUM(Salary) > 10000
+    
+
+
+     Example:
+     SELECT Department, SUM(Salary) AS Total_Salary
+     FROM Employees
+     WHERE Salary > 50000   -- Filters individual rows BEFORE grouping
+     GROUP BY Department
+     HAVING SUM(Salary) > 200000;  -- Filters groups AFTER aggregation
+
+
+
+ 
 
 
 
 
 
+
+
+
+
+     
 
 
 
