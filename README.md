@@ -98,6 +98,50 @@
 
 ### Joins (Inner Joins, Outer Joins, Left Joins, Right Joins)
 
+      JOINS (INNER JOINS,OUTER JOINS, LEFT JOINS, RIGHT JOINS) 
+      Combining table based on sth they have in common
+      Use JOIN when you need to retrieve data from related tables (i.e., foreign key relationshi
+
+
+### INNER JOIN
+      Returns rows that have common/matching values in both tables
+      Returns What both tables have in common
+      Returns only the matching records from both tables.
+      Unmatched rows are excluded (i.e., no null values from either table)
+      If a certain name appears in one table, it wont be returned at all.
+
+### OUTER JOINS
+      Returns all records from one or both tables, even if they don’t have a match.
+      Fills missing values with NULL where no match is found.
+#### Types of OUTER JOIN:
+      LEFT JOIN (LEFT OUTER JOIN) → Returns all rows from the left table, plus matching rows from the right.
+      RIGHT JOIN (RIGHT OUTER JOIN) → Returns all rows from the right table, plus matching rows from the left.
+      FULL JOIN (FULL OUTER JOIN) → Returns all rows from both tables, filling in NULLs for missing matches.
+
+### LEFT JOIN
+      Returns all rows from the LEFT table, plus matching rows from the RIGHT table.
+      If no match is found, NULL is returned for the RIGHT table’s columns.
+### RIGHT JOIN
+      Returns all rows from the RIGHT table, plus matching rows from the LEFT table.
+      If no match is found, NULL is returned for the LEFT table’s columns.
+
+### UNIONS
+      Used to merge rows from two or more tables with similar structure.
+      Retrieves separate sets of records that have the same columns.
+      Works vertically (adds rows).
+      UNION removes duplicates (use UNION ALL to keep duplicates).
+      Use UNION when you need to merge results from similar tables (same columns but different records).
+
+
+
+           Feature	          UNION	                                                    JOIN
+           Purpose     	      Combines rows from multiple tables	                    Combines columns from multiple tables
+           Works on           Tables with similar columns	                            Tables with related keys (foreign key)
+           Duplicates?	      Removes duplicates (UNION) or keeps them (UNION ALL)	    Shows all matching data
+           Data Expansion	  Adds more rows	                                        Adds more columns
+
+
+
 
 
 
