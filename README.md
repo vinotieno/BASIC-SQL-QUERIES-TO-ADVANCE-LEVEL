@@ -219,11 +219,45 @@
 
 
 
- 
+ # Day 7 of Learning Intermediate Sql Queries
+
+ ## INSERT + UPDATE + DELETE
 
 
+     INSERT:
+     INSERT	Adds new records into a table
+     Always specify column names and values.
+     Use INSERT INTO table_name VALUES (...) only if inserting values into all columns.
+     
+
+     UPDATE:
+     UPDATE	Modifies existing records in a table
+     Used to change existing records in a table.
+     You have to set what you want to modify.
+     Always use WHERE to update specific records, otherwise all rows will be updated.
+     Can update multiple columns
 
 
+     DELETE
+     DELETE	Removes records from a table
+     Used to remove records from a table.
+     Always use WHERE to avoid deleting all rows.
+     To delete all records but keep table structure:
+
+
+ # Day 7 of Learning Intermediate Sql Queries  
+
+ ## PARTITION BY
+     The PARTITION BY clause is used in window functions to divide the result set into partitions (groups) and perform calculations within each partition separately, rather 
+     than across the entire dataset.
+
+     It is similar to GROUP BY, but unlike GROUP BY, it does not collapse rows. Instead, it keeps all rows while applying the function within partitions.
+
+
+     Use PARTITION BY when: 
+     You need calculations within each group while keeping all rows.
+     You want running totals, ranking, or comparisons without grouping rows together.
+     You need window functions like SUM(), AVG(), RANK(), DENSE_RANK(), ROW_NUMBER().
 
 
 
