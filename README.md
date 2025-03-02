@@ -245,7 +245,7 @@
      To delete all records but keep table structure:
 
 
- # Day 7 of Learning Intermediate Sql Queries  
+ # Day 8 of Learning Intermediate Sql Queries  
 
  ## PARTITION BY
      The PARTITION BY clause is used in window functions to divide the result set into partitions (groups) and perform calculations within each partition separately, rather 
@@ -258,6 +258,128 @@
      You need calculations within each group while keeping all rows.
      You want running totals, ranking, or comparisons without grouping rows together.
      You need window functions like SUM(), AVG(), RANK(), DENSE_RANK(), ROW_NUMBER().
+
+
+ # Day 9 of Learning Advance Sql Queries 
+
+## SUBQUERY
+      A subquery (also known as a nested query or inner query) is a query inside another SQL query. 
+      It is used to retrieve data that will be used in the main query.
+      
+      Types:
+      Single-row subquery: Returns one value (e.g., =, <, >, <=, >=, <>)
+      Multi-row subquery: Returns multiple values (e.g., IN, ANY, ALL)
+      Correlated subquery: Depends on the outer query for each row processed
+      Nested subquery: A subquery within another subquery.
+
+
+      When to Use a Subquery:
+      When retrieving data for filtering (WHERE, HAVING).
+      When computing aggregate values for comparisons.
+      When using a subquery instead of multiple joins (in some cases).
+
+      
+
+# Day 9 of Learning Advance Sql Queries 
+
+## STRING FUNCTION
+     SQL provides several string functions to manipulate text data. 
+     These functions are useful for formatting, searching, extracting, replacing, and modifying strings.
+
+     Function:Description::Example:Output
+     1.LEN() / LENGTH():
+     Returns the length of a string:	
+     SELECT LEN('Hello');	5
+
+
+     2.LOWER():
+     Converts text to lowercase
+     SELECT LOWER('SQL Functions');	sql functions
+
+
+     
+     3.UPPER()	
+     Converts text to uppercase
+     SELECT UPPER('Hello');	HELLO
+
+     
+     4.LTRIM()	
+     Removes leading spaces	
+     SELECT LTRIM(' Hello');	'Hello'
+
+
+     
+     5.RTRIM()
+     Removes trailing spaces	
+     SELECT RTRIM('Hello ');	'Hello'
+
+     
+     6.TRIM()	
+     Removes both leading & trailing spaces	
+     SELECT TRIM(' Hello ');	'Hello'
+
+     
+     7.SUBSTRING()	
+     Extracts a portion of a string	
+     SELECT SUBSTRING('Database', 1, 4);	'Data'
+
+
+
+     8.LEFT()	
+     Returns the left part of a string
+     SELECT LEFT('SQL Functions', 3);	'SQL'
+
+
+     
+     9.RIGHT()	
+     Returns the right part of a string
+     SELECT RIGHT('Functions', 4);	'tions'
+
+
+     
+     10.CHARINDEX()	
+     Finds position of a substring
+     SELECT CHARINDEX('a', 'Database');	2
+
+
+     
+     11.PATINDEX()	
+     Finds pattern in a string	
+     SELECT PATINDEX('%b%', 'Database');	5
+
+
+    
+     12.REPLACE()	
+     Replaces part of a string	
+     SELECT REPLACE('SQL is cool', 'cool', 'awesome');	'SQL is awesome'
+
+
+     
+     13.STUFF()	
+     Deletes and inserts text in a string	
+     SELECT STUFF('Hello', 2, 3, 'i');	'Hi'
+
+
+     
+     14.CONCAT()	
+     Joins multiple strings
+     SELECT CONCAT('SQL ', 'Functions');	'SQL Functions'
+
+
+
+      When to Use String Functions:
+      - Cleaning & formatting text data
+      - Searching & extracting specific text patterns
+      - Concatenating multiple string values
+      - Replacing, trimming, or masking sensitive data.
+
+
+
+
+
+
+
+     
 
 
 
